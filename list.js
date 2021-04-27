@@ -26,12 +26,12 @@ function addTodo(event){
     //saveLocalTodos(todoInput.value);
 
     const completedButton=document.createElement('button');
-    completedButton.innerHTML='<i class =fas fa-check"></i>';
+    completedButton.innerHTML='Check';
     completedButton.classList.add("complete-btn");
     todoDiv.appendChild(completedButton);
 
     const trashButton=document.createElement('button');
-    trashButton.innerHTML='<i class =fas fa-trash"></i>';
+    trashButton.innerHTML='Delete';
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
 
@@ -72,8 +72,8 @@ function filterTodo(e){
                         todo.style.display="none";
                     }
                     break;
-                    case "uncompleted":
-                    if(!todo.classList.contains("completed")){
+                case "uncompleted":
+                  if(!todo.classList.contains('completed')){
                         todo.style.display="flex";
                     }
                     else{

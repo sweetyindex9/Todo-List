@@ -14,7 +14,12 @@ body{
 header{
     font-size: 1.5rem;
 }
-
+/*.todo-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}*/
 h1{
 
     display: flex;
